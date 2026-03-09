@@ -31,47 +31,58 @@
 .navbar-nav .nav-item{
     margin: 0;
 }
-@media (max-width: 992px){
-  /* Centers the logo */
-  .navbar-brand{
+@media (max-width: 992px) {
+  /* 1. Centers the logo in the middle of the navbar */
+  .navbar-brand {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-right: 0; /* Overrides default Bootstrap margin */
   }
 
-  /* Locks the hamburger menu in place */
-  .navbar-toggler{
-    position: absolute;
-    right: 15px;
-    top: 15px; /* <-- ADD THIS: Adjust the pixel value slightly if it doesn't align perfectly with your logo's center */
-  }
-
-  .logo{
-    height: 50px;
+  /* 2. Sizes the logo for mobile */
+  .logo {
+    height: 75px;
     width: auto;
   }
 
-  /* Centers the dropdown items on mobile */
+ .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 26px; /* Increased from 15px to align with the 75px logo */
+    z-index: 99; 
+  }
+  /* 4. Centers the expanded menu container */
   .navbar-collapse {
     text-align: center;
+    width: 100%;
   }
-  
+
+  /* 5. Stacks and centers the individual nav items */
   .navbar-nav {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the flex items horizontally */
+    align-items: center;
     width: 100%;
+    padding-top: 15px; /* Adds a little space below the navbar */
   }
 
   .navbar-nav .nav-item {
     width: 100%; 
-    margin-bottom: 5px; /* Adds a little breathing room between mobile links */
+    margin: 5px 0; /* Adds breathing room between links */
   }
-  
-  /* Ensures your custom dropdown buttons center their text */
+
+  /* 6. Ensures the custom dropdown toggle buttons are centered */
   .nav-item.dropdown > button {
     width: 100%;
     text-align: center;
+  }
+
+  /* 7. Centers the links inside the dropdown menus (Preview/Events) */
+  .dropdown-menu {
+    text-align: center;
+    border: none; /* Optional: makes mobile dropdowns look cleaner */
+    background: transparent; /* Optional: blends it into the main menu */
   }
 }
 @media screen and (max-width:1000px) {
