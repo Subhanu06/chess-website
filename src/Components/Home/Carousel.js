@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "../main.css";
 import "./Carousel.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -11,40 +11,37 @@ import Events from "../../assets/Events.JPG";
 import Main5 from "../../assets/main5.jpg";
 import LogoVid from "../../assets/Logovid.mp4";
 
-// Intervals for each slide (ms): slide 0 = 8s, slides 1-5 = 5s
-var INTERVALS = [8000, 5000, 5000, 5000, 5000, 5000];
-var TOTAL_SLIDES = 6;
+const INTERVALS = [8000, 5000, 5000, 5000, 5000, 5000];
+const TOTAL_SLIDES = 6;
 
 function CarouselItem() {
-  var activeState = useState(0);
-  var index = activeState[0];
-  var setIndex = activeState[1];
-  var timerRef = useRef(null);
+  const [index, setIndex] = useState(0);
+  const timerRef = useRef(null);
 
-  function scheduleNext(currentIndex) {
+  const scheduleNext = useCallback((currentIndex) => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
-    timerRef.current = setTimeout(function () {
-      var next = (currentIndex + 1) % TOTAL_SLIDES;
+    timerRef.current = setTimeout(() => {
+      const next = (currentIndex + 1) % TOTAL_SLIDES;
       setIndex(next);
       scheduleNext(next);
     }, INTERVALS[currentIndex]);
-  }
+  }, []);
 
-  useEffect(function () {
+  useEffect(() => {
     scheduleNext(0);
-    return function () {
+    return () => {
       if (timerRef.current) {
         clearTimeout(timerRef.current);
       }
     };
-  }, []);
+  }, [scheduleNext]);
 
-  function handleSelect(selectedIndex) {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
     scheduleNext(selectedIndex);
-  }
+  };
 
   return (
     <div className="max_height">
@@ -52,7 +49,8 @@ function CarouselItem() {
         activeIndex={index}
         onSelect={handleSelect}
         interval={null}
-        ride="carousel"
+        controls={true}
+        indicators={false}
       >
 
         <Carousel.Item>
@@ -70,7 +68,7 @@ function CarouselItem() {
           <img
             className="d-block custom_height"
             src={Main2}
-            alt="Group photo"
+            alt="Members"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -86,7 +84,7 @@ function CarouselItem() {
           <img
             className="d-block custom_height"
             src={TeachersDay}
-            alt="Teachers Day celebration"
+            alt="Teachers Day"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -102,7 +100,7 @@ function CarouselItem() {
           <img
             className="d-block custom_height"
             src={Events}
-            alt="Club events"
+            alt="Events"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -134,7 +132,7 @@ function CarouselItem() {
           <img
             className="d-block custom_height"
             src={Main1}
-            alt="About ChESS"
+            alt="About"
           />
           <Carousel.Caption>
             <TypeAnimation
