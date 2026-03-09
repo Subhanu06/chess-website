@@ -8,8 +8,32 @@ h4.role {
 .margin__top{
   margin-top: 6rem;
 }
-  @media screen and (max-width: 997px) {
-    .margin__top{
-      margin-top: .5rem;
-    }
+@media screen and (max-width: 997px) {
+  .margin__top{
+    margin-top: .5rem;
   }
+}
+@media screen and (max-width: 530px) {
+  .members__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .members__grid--single {
+    justify-content: center;
+  }
+  .member__card img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .members__grid {
+    gap: 1.2rem;
+  }
+  .member__card img {
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
