@@ -56,15 +56,16 @@ function NavBar() {
             </li>
 
             <li className="nav-item dropdown">
-              <a
+              <button
                 className={isDropdownActive(['/chemeinsider', '/achatwithchess'])}
                 id="navbarDropdownMenuLink-4"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                style={{background: 'none', border: 'none', color: 'inherit', cursor: 'pointer'}}
               >
                 Preview
-              </a>
+              </button>
               <div
                 className="dropdown-menu dropdown-menu-right dropdown-cyan"
                 aria-labelledby="navbarDropdownMenuLink-4"
@@ -79,15 +80,16 @@ function NavBar() {
             </li>
 
             <li className="nav-item dropdown">
-              <a
+              <button
                 className={isDropdownActive(['/chemKriti2021', '/chemKriti2022', '/chemKriti2025', '/more'])}
                 id="navbarDropdownMenuLink-4"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                style={{background: 'none', border: 'none', color: 'inherit', cursor: 'pointer'}}
               >
                 Events
-              </a>
+              </button>
               <div
                 className="dropdown-menu dropdown-menu-right dropdown-cyan"
                 aria-labelledby="navbarDropdownMenuLink-4"

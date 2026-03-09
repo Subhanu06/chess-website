@@ -3,7 +3,6 @@ import NavBar from "../NavBar";
 import Footer from "../Footer";
 import "./Faculty.css";
 import { TypeAnimation } from "react-type-animation";
-import PPG from "../../assets/PPG.jpg";
 import AH from "../../assets/AH.jpg";
 import AKS from "../../assets/AKS.jpg";
 import GH from "../../assets/GH.webp";
@@ -18,7 +17,6 @@ import PP from "../../assets/PP.jpg";
 import TM from "../../assets/TM.jpg";
 import RGC from "../../assets/RGC.jpg";
 import KCG from "../../assets/KCG.jpg";
-import SK from "../../assets/SK.jpg";
 import MB from "../../assets/MB.JPG";
 import DebayanDas from "../../assets/DebayanDas.jpg";
 function Faculty() {

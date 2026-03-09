@@ -70,7 +70,7 @@ function CarouselItem() {
           <img
             className="d-block custom_height"
             src={Main2}
-            alt="Club group photo"
+            alt="Group photo"
           />
           <Carousel.Caption>
             <TypeAnimation
