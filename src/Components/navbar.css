@@ -5,13 +5,15 @@
   background: rgba(6, 23, 49, 1);
 }
 
+
 .logo{
-    width: 35%;
+    height: 75px;
+    width: auto;
 }
 
 .custom_margin{
     margin-left: auto;
-    margin-right: 2rem;
+    
 }
 .nav-link{
     font-size: 1.2rem !important;
@@ -28,6 +30,49 @@
 }
 .navbar-nav .nav-item{
     margin: 0;
+}
+@media (max-width: 992px){
+  /* Centers the logo */
+  .navbar-brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Locks the hamburger menu in place */
+  .navbar-toggler{
+    position: absolute;
+    right: 15px;
+    top: 15px; /* <-- ADD THIS: Adjust the pixel value slightly if it doesn't align perfectly with your logo's center */
+  }
+
+  .logo{
+    height: 50px;
+    width: auto;
+  }
+
+  /* Centers the dropdown items on mobile */
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the flex items horizontally */
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%; 
+    margin-bottom: 5px; /* Adds a little breathing room between mobile links */
+  }
+  
+  /* Ensures your custom dropdown buttons center their text */
+  .nav-item.dropdown > button {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width:1000px) {
     .custom_navButtom{
