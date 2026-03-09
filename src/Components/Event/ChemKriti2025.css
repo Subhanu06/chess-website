@@ -1,0 +1,99 @@
+/* ChemKriti2025 specific styles */
+.chemkriti2025-container {
+    margin-top: 5rem;
+}
+
+.text_gold {
+    color: var(--accent_color) !important;
+}
+
+.chemkriti2025-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.chemkriti2025-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #666666;
+}
+
+/* Make all cards same size */
+.members__box.background {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background: var(--card_color) !important;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.background__img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.background__text {
+    flex: 1;
+}
+
+/* Row spacing */
+.outer .row {
+    margin-bottom: 2rem;
+}
+
+.gap {
+    margin-top: 0;
+}
+
+.event-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-poster {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.main-poster {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .chemkriti2025-title {
+        font-size: 2rem;
+    }
+    
+    .chemkriti2025-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .background__img {
+        height: 200px;
+    }
+    
+    .members__box.background {
+        margin-bottom: 1.5rem;
+    }
+}

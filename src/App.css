@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/*:root {
+  --bg_color: #1e293b;
+  --card_color: #334155;
+  --accent_color: #3b82f6;
+  --main_text: #f8fafc;
+  --sub_text: #cbd5e1;
+}/* --- Global Styles --- */
+:root {
+  --bg_color: #1e293b; /* Softer slate background */
+  --card_color: #334155; /* Slightly lighter for containers/nav */
+  --accent_color: #3b82f6; /* Soft electric blue for buttons/links */
+  --main_text: #f8fafc; /* Crisp off-white for primary text */
+  --sub_text: #cbd5e1; /* Muted grey for secondary text */
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 575px) {
+    html{
+        text-align: center;
+    }
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    margin: 0;
+    background-color: var(--bg_color);
+    color: var(--main_text);
+}
+

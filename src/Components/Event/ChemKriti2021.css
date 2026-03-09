@@ -1,0 +1,45 @@
+.gap {
+    margin-top: 0.85em;
+  }
+
+.card__outerHeading {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.card__lead {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main__img {
+  height: 450px;
+  width: 450px;
+  object-fit: fill;
+}
+.background {
+  background-color: blue;
+  text-align: center;
+}
+.background__img {
+  border-radius: 8%;
+  opacity: .95;
+}
+.background__heading {
+  color: #ffe079;
+}
+.background__text {
+  color: #fff;
+}
+.text_gold{
+  color: #FFD700;
+}
+@media screen and (max-width: 260px) {
+  .card__outerHeading {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+}

@@ -1,0 +1,6 @@
+.read-or-hide {
+    font-weight: bold;
+    color: var(--accent_color);
+    cursor: pointer;
+  }
+  
