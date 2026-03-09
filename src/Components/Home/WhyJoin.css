@@ -85,4 +85,27 @@
   .features-grid {
     grid-template-columns: 1fr;
   }
+  .why-join-title {
+    font-size: 2rem;
+  }
+  .feature-card {
+    padding: 1rem 1.5rem;
+  }
+  .feature-title {
+    font-size: 1.1rem;
+  }
+  .feature-desc {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-join-section {
+    padding: 3rem 1rem;
+  }
+  .why-join-title {
+    font-size: 1.8rem;
+  }
+  .feature-card {
+    padding: 1rem;
+  }
 }

@@ -15,5 +15,14 @@
 @media screen and (max-width: 980px) {
     .custom_height{
         margin-top: 0 !important;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    .custom_height{
+        height: 40vh;
+    }
+    .carousel-caption h2 {
+        font-size: 1.2rem;
     }
 }

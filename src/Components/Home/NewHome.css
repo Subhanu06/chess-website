@@ -246,10 +246,11 @@
   .about-container,
   .why-chess-container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .hero-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .why-chess-cards {
@@ -257,6 +258,32 @@
   }
 
   .statistics-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .about-section {
+    padding: 3rem 1rem;
+  }
+  
+  .why-chess-section {
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 1rem;
+  }
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+  .btn-primary {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

@@ -67,15 +67,31 @@
 }
 @media screen and (max-width: 530px) {
     .section-title h3{
-        width: 60%;
+        width: 80%;
         margin: .5rem auto;
         border-bottom: 2px solid #00f;
+        font-size: 1.2rem;
     }
     .members__grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 0.5rem;
     }
     .member__card img {
-        height: 250px;
+        height: 220px;
+    }
+    .member__name {
+        font-size: 1rem;
+    }
+    .member__role {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .members__grid {
+        padding: 0 0.25rem;
+    }
+    .member__card img {
+        height: 200px;
     }
 }
