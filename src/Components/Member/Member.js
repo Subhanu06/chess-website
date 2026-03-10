@@ -23,6 +23,7 @@ import Preetham from "../../assets/BodasingiPreetham.jpeg";
 import CharanTeja from "../../assets/PochepalliCharamTeja-TechHead.jpeg";
 import Kamini from "../../assets/Kamini.jpeg";
 import Monish from "../../assets/Monish.S.N.jpeg";
+import Abhinav from "../../assets/Abhinav.jpeg";
 
 import NavBar from "../NavBar";
 import Footer from "../Footer";
@@ -82,13 +83,6 @@ function Member() {
               </div>
             </div>
             <div className="member__card">
-              <img src={Yoshita} alt="Yoshitha Reddy" loading="lazy" />
-              <div className="member__overlay">
-                <p className="member__name">Yoshitha Reddy</p>
-                <p className="member__role">Design Head</p>
-              </div>
-            </div>
-            <div className="member__card">
               <img src={Abhishekh} alt="David Abhisekh G" loading="lazy" />
               <div className="member__overlay">
                 <p className="member__name">David Abhisekh G</p>
@@ -100,6 +94,13 @@ function Member() {
               <div className="member__overlay">
                 <p className="member__name">Manoj Kumar Doki</p>
                 <p className="member__role">Convener</p>
+              </div>
+            </div>
+            <div className="member__card">
+              <img src={Yoshita} alt="Yoshitha Reddy" loading="lazy" />
+              <div className="member__overlay">
+                <p className="member__name">Yoshitha Reddy</p>
+                <p className="member__role">Design Head</p>
               </div>
             </div>
             <div className="member__card">
@@ -219,6 +220,13 @@ function Member() {
               <img src={Monish} alt="Monish S N" loading="lazy" />
               <div className="member__overlay">
                 <p className="member__name">Monish S N</p>
+                <p className="member__role">Executive Member</p>
+              </div>
+            </div>
+            <div className="member__card">
+              <img src={Abhinav} alt="Abhinav" style={{objectPosition: "center 20%"}} loading="lazy" />
+              <div className="member__overlay">
+                <p className="member__name">Abhinav</p>
                 <p className="member__role">Executive Member</p>
               </div>
             </div>

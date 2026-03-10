@@ -69,6 +69,7 @@ function CarouselItem() {
             className="d-block custom_height"
             src={Main2}
             alt="Members"
+            loading="lazy"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -85,6 +86,7 @@ function CarouselItem() {
             className="d-block custom_height"
             src={TeachersDay}
             alt="Teachers Day"
+            loading="lazy"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -101,6 +103,7 @@ function CarouselItem() {
             className="d-block custom_height"
             src={Events}
             alt="Events"
+            loading="lazy"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -117,6 +120,7 @@ function CarouselItem() {
             className="d-block custom_height"
             src={Main5}
             alt="Faculty"
+            loading="lazy"
           />
           <Carousel.Caption>
             <TypeAnimation
@@ -133,6 +137,7 @@ function CarouselItem() {
             className="d-block custom_height"
             src={Main1}
             alt="About"
+            loading="lazy"
           />
           <Carousel.Caption>
             <TypeAnimation
