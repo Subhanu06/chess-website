@@ -125,9 +125,9 @@ function Member() {
               </div>
             </div>
             <div className="member__card">
-              <img src={Rakshit} alt="Sima Rakshit" loading="lazy" />
+              <img src={Rakshit} alt="Srinjay Rakshit" loading="lazy" />
               <div className="member__overlay">
-                <p className="member__name">Sima Rakshit</p>
+                <p className="member__name">Srinjay Rakshit</p>
                 <p className="member__role">Event Head</p>
               </div>
             </div>
