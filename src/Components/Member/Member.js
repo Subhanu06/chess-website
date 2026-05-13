@@ -188,6 +188,22 @@ function Member() {
   <div className="members__grid">
 
     <div className="member__card">
+      <img src={Subhanu} alt="Subhanu Dhar" style={{objectPosition: "center 20%"}} loading="lazy" />
+      <div className="member__overlay">
+        <p className="member__name">Subhanu Dhar</p>
+        <p className="member__role">Executive Member</p>
+      </div>
+    </div>
+
+    <div className="member__card">
+      <img src={Mithu} alt="Mithu Paul" loading="lazy" />
+      <div className="member__overlay">
+        <p className="member__name">Mithu Paul</p>
+        <p className="member__role">Executive Member</p>
+      </div>
+    </div>
+
+    <div className="member__card">
       <img src={Abrar} alt="Abrar Ahammad Khan" loading="lazy" />
       <div className="member__overlay">
         <p className="member__name">Abrar Ahammad Khan</p>
@@ -220,22 +236,6 @@ function Member() {
     </div>
 
     <div className="member__card">
-      <img src={Rohitt} alt="Rohit Balla" loading="lazy" />
-      <div className="member__overlay">
-        <p className="member__name">Rohit Balla</p>
-        <p className="member__role">Executive Member</p>
-      </div>
-    </div>
-
-    <div className="member__card">
-      <img src={Mithu} alt="Mithu Paul" loading="lazy" />
-      <div className="member__overlay">
-        <p className="member__name">Mithu Paul</p>
-        <p className="member__role">Executive Member</p>
-      </div>
-    </div>
-
-    <div className="member__card">
       <img src={Pankaj} alt="Pankaj Soni" loading="lazy" />
       <div className="member__overlay">
         <p className="member__name">Pankaj Soni</p>
@@ -247,6 +247,14 @@ function Member() {
       <img src={Pravallika} alt="S. Pravallika" loading="lazy" />
       <div className="member__overlay">
         <p className="member__name">S. Pravallika</p>
+        <p className="member__role">Executive Member</p>
+      </div>
+    </div>
+
+    <div className="member__card">
+      <img src={Rohitt} alt="Rohit Balla" loading="lazy" />
+      <div className="member__overlay">
+        <p className="member__name">Rohit Balla</p>
         <p className="member__role">Executive Member</p>
       </div>
     </div>
@@ -271,14 +279,6 @@ function Member() {
       <img src={Souhardhya} alt="Souhardhya Nayak" loading="lazy" />
       <div className="member__overlay">
         <p className="member__name">Souhardhya Nayak</p>
-        <p className="member__role">Executive Member</p>
-      </div>
-    </div>
-
-    <div className="member__card">
-      <img src={Subhanu} alt="Subhanu Dhar" style={{objectPosition: "center 20%"}} loading="lazy" />
-      <div className="member__overlay">
-        <p className="member__name">Subhanu Dhar</p>
         <p className="member__role">Executive Member</p>
       </div>
     </div>
