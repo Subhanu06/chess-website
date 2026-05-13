@@ -51,6 +51,17 @@ import RKumar from "../../assets/RKumar.jpg";
 import Nimcheki from "../../assets/Nimcheki.jpg";
 import PGupta from "../../assets/PGupta.jpg";
 import YMAHESHWARI from "../../assets/YMAHESHWARI.jpeg";
+import Yoshita from "../../assets/IMG_20241215_112108 - Yoshitha Reddy.jpg";
+import Aditi from "../../assets/00954e8e-854b-42fc-9111-b70abba815b8 - ADITI Mahto.jpeg";
+import Alla from "../../assets/IMG_20251111_145449 - Vamsi Alla.jpg";
+import Manoj from "../../assets/IMG_5440 - Manoj Kumar Doki.jpg";
+import Azmeera from "../../assets/IMG_20250709_001815_251 - Azmeera Akhil.webp";
+import Shazeena from "../../assets/20250308_124939 - Shazeena Hussain.jpg";
+import Milita from "../../assets/IMG_20250225_121913 - Milita Ghosh.jpg";
+import Abhishekh from "../../assets/chess_img - David Abhisekh G.jpg";
+import Rakshit from "../../assets/pic2 - Sima Rakshit.jpg";
+import Jaswanth from "../../assets/IMG_4175 - JASWANTH KANDREGULA.JPG";
+import CharanTeja from "../../assets/PochepalliCharamTeja-TechHead.jpeg";
 import "./Alumni.css"
 import NavBar from '../NavBar'
 import Footer from '../Footer'
@@ -476,7 +487,111 @@ function Alumni() {
                     </div>
                 </div>
             </div>
+             <div className='outer members__box__wrap'>
+    <div className="section-title">
+        <h3>ChESS Members from Batch of 2026</h3>
+    </div>
+
+    <div className="members__grid">
+
+        <div className="member__card">
+            <img src={Jaswanth} alt="Jaswanth Kandregula" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Jaswanth Kandregula</p>
+                <p className="member__role">President</p>
+            </div>
         </div>
+
+        <div className="member__card">
+            <img src={Alla} alt="Vamsi Alla" style={{objectPosition: "30% 20%"}} loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Vamsi Alla</p>
+                <p className="member__role">General Secretary</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Aditi} alt="Aditi Mahto" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Aditi Mahto</p>
+                <p className="member__role">Vice President</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Abhishekh} alt="David Abhisekh G" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">David Abhisekh G</p>
+                <p className="member__role">Treasurer</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Manoj} alt="Manoj Kumar Doki" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Manoj Kumar Doki</p>
+                <p className="member__role">Convener</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Yoshita} alt="Yoshitha Reddy" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Yoshitha Reddy</p>
+                <p className="member__role">Design Head</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Azmeera} alt="Azmeera Akhil" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Azmeera Akhil</p>
+                <p className="member__role">Operation Head</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Shazeena} alt="Shazeena Hussain" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Shazeena Hussain</p>
+                <p className="member__role">Sponsorship Head</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Milita} alt="Milita Ghosh" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Milita Ghosh</p>
+                <p className="member__role">Publicity Head</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={Rakshit} alt="Srinjay Rakshit" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Srinjay Rakshit</p>
+                <p className="member__role">Event Head</p>
+            </div>
+        </div>
+
+        <div className="member__card">
+            <img src={CharanTeja} alt="Pochepalli Charan Teja" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Pochepalli Charan Teja</p>
+                <p className="member__role">Tech Head</p>
+            </div>
+        </div>
+         <div className="member__card">
+            <img src={PDutta} alt="Pratik Dutta" loading="lazy" />
+            <div className="member__overlay">
+                <p className="member__name">Pratik Dutta</p>
+                <p className="member__role">M.Tech Representative</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+            </div> 
         <Footer/>  
     </div>
   )
